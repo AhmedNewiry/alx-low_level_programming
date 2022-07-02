@@ -16,6 +16,7 @@ for (sec = '0'; sec <= '9'; sec++)
 putchar(',');
 putchar(sec);
 }
+}
 putchar('\n');
 return (0);
 }
