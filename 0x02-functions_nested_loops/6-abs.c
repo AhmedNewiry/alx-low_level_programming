@@ -14,6 +14,6 @@ else if (c == 0)
 {
 return (0);
 }
-c = c * -1
+c = c * -1;
 return (c);
 }
