@@ -1,6 +1,8 @@
-#include <main.h>
+#include "main.h"
 /**
- *print_alphabet_x10- prints all alphabet ten times
+ * _islower - checks if the letter is lower case.
+ * @c: is the letter input
+ * Return: is 1 if lower case and is 0 if otherwise
  */
 int _islower(int c)
 {
