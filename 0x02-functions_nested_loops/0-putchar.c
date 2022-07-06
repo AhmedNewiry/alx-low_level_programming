@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-*main- entry point
-*Return : Always 0 (sucees)
-**/
+ *main- entry point
+ *
+ *Return: Always 0 (sucees)
+ */
 int main(void)
 {
 _putchar('_');
@@ -15,4 +16,4 @@ _putchar('a');
 _putchar('r');
 _putchar('\n');
 return (0);
-} 
+}
