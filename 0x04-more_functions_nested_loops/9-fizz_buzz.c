@@ -26,7 +26,10 @@ else
 {
 printf("%i ", x);
 }
+if (x != 100)
+{
 putchar(' ');
+}
 }
 printf("\n");
 return (0);
