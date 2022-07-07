@@ -4,13 +4,15 @@
  */
 void print_most_numbers(void)
 {
+int x;
 int i;
 for (i = '0'; i <= '9'; i++)
 {
-if (i != '2' && i != '4')
+for (x ='0'; x <= '7*2'; x++)
 {
 _putchar(i);
 }
+_putchar(\n);
 }
 _putchar('\n');
 }
