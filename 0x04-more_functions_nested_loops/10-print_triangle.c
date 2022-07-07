@@ -12,7 +12,7 @@ int i;
 int x;
 if (size > 0)
 {
-for (i = 1; i <= size; i++)
+for (i = size; i <= 0; i--)
 {
 for (x = 1; x <= i; x++)
 {
