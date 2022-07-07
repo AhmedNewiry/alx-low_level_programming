@@ -24,7 +24,7 @@ printf("Fizz");
 }
 else
 {
-printf("%i ", x);
+printf("%", x);
 }
 if (x != 100)
 {
