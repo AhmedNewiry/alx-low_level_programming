@@ -12,9 +12,9 @@ int i;
 int x;
 if (size > 0)
 {
-for (i = size; i <= 0; i--)
+for (i = 0; i <= size; i++)
 {
-for (x = 1; x <= i; x++)
+for (x = size ; x >= i; x--)
 {
 _putchar(' ');
 }
