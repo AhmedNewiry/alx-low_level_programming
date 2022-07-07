@@ -9,7 +9,7 @@ int i;
 int x;
 if (size > 0)
 {
-for (i = 1; i < size; i++)
+for (i = 0; i < size; i++)
 {
 for (x = size - 1; x > i; x--)
 {
