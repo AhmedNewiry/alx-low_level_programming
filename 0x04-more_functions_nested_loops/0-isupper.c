@@ -2,6 +2,7 @@
 /**
  * _isupper- checks if the letter is capital
  * Return: 1 if capital and - if otherwise
+ * @c: is the entered character
  **/
 int _isupper(int c)
 {
