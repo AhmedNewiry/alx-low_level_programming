@@ -8,11 +8,16 @@ int x;
 int i;
 for (i = '0'; i <= '9'; i++)
 {
-for (x = '0'; x <= '7*2'; x++)
+for (x = 0; x < 15  ; x++)
 {
-_putchar(i);
+if (x > 9)
+{
+putchar(x / 10 + '0');
 }
-_putchar(\n);
+putchar(x % 10 + '0');
 }
-_putchar('\n');
+putchar('\n');
 }
+putchar('\n');
+}
+
