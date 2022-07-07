@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- *
- * print_line- prints a diagonal line
- *
- * @size: is the size of the square
- *
+ * print_square- prints a diagonal line
+ * @size: is the size of the squar
  */
 
 void print_square(int size)
