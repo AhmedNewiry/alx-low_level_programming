@@ -3,8 +3,8 @@
 /**
  * main- causes an infinite loop
  * Return: 0
+ * @n: is a special character for new line
  */
-
 int main(void)
 {
 
