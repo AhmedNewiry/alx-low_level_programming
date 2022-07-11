@@ -7,10 +7,10 @@ void print_rev(char *s)
 {
 char *start;
 start = s;
-int n = 0;
+
 while (*s)
 {
-n = n + s;
+
 s++;
 }
 
