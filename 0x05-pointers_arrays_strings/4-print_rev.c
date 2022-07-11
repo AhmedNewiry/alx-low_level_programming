@@ -5,11 +5,11 @@
  */
 void print_rev(char *s)
 {
-long long int start = s;
+char *start = s;
 int n = 0;
 while (*s)
 {
-n += s;
+n = n + s;
 s++;
 }
 
