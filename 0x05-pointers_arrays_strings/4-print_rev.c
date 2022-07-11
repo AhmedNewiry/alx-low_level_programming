@@ -13,8 +13,8 @@ while (*s)
 
 s++;
 }
-
-while (start <= (s - 1))
+s--;
+while (start <= s)
 {
 _putchar(*s);
 --s;
