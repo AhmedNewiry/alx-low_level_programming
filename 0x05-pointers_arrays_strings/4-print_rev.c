@@ -5,7 +5,8 @@
  */
 void print_rev(char *s)
 {
-int start = s;
+char *start;
+start = s;
 int n = 0;
 while (*s)
 {
@@ -13,7 +14,7 @@ n = n + s;
 s++;
 }
 
-while (start <= n)
+while (start <= s)
 {
 _putchar(*s);
 n--;
