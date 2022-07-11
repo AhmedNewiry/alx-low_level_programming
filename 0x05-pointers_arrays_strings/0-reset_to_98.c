@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * reset_to_98- is the tge changer function
  * @n: is a pointer
