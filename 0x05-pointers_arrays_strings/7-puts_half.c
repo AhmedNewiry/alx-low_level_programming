@@ -14,28 +14,29 @@ while (*str)
 num1++;
 str++;
 }
-num1--;
+
 num2 = num1 / 2;
 while (num2 <= num1)
 {
 str--;
 num2++;
 }
+num1--;
 num3 = num1 / 2;
 num4 = num1 % 2;
 if (num4 != 0)
 {
-while ((num3 + 1) <= num1)
+while ((num3 +1 ) <= num1)
 {
-_putchar(*str);
+putchar(*str);
 num3++;
 str++;
 }
 
 }
-while (num3 <= num1)
+while ((num3 + 1) <= num1)
 {
-_putchar(*str);
+putchar(*str);
 num3++;
 str++;
 }
