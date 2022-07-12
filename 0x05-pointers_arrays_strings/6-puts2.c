@@ -13,7 +13,7 @@ if (str == ptr)
 {	
 str++;
 }
-str += 2
+str += 2;
 _putchar('\n');
 
 }
