@@ -22,12 +22,15 @@ str--;
 num2++;
 }
 
-num3 = num1 / 2;
+num3 = (num1 - 1) / 2;
+
+
 num4 = num1 % 2;
 if (num4 != 0)
 {
-while (num3 < num1)
+while (num3 <= num1)
 {
+num3++;
 _putchar(*str);
 num3++;
 str++;
