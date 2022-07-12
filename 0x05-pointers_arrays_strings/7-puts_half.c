@@ -23,7 +23,7 @@ num2++;
 }
 num3 = num1 / 2;
 num4 = num1 % 2;
-if (!num4)
+if (num4 != 0)
 {
 while ((num3 + 1) <= num1)
 {
