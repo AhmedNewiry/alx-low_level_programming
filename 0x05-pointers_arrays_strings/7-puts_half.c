@@ -14,13 +14,7 @@ while (*str)
 num1++;
 str++;
 }
-num1--;
-num2 = num1 / 2;
-while (num2 <= num1)
-{
-str--;
-num2++;
-}
+
 
 
 num4 = num1 % 2;
