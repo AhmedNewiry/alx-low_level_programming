@@ -24,5 +24,6 @@ num3 = (num1 - 1) / 2;
 while (num3 < num1)
 {
 _putchar(*str);
+num3++;
 }
 }
