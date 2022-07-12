@@ -28,7 +28,7 @@ while (start <= s)
 x++;
 }
 
-while (n >= z)
+while ((n - 1) >= z)
 {
 *(s + z) = *(rev + z);
 z++;
