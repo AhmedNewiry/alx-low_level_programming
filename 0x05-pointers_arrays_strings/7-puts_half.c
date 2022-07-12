@@ -22,12 +22,12 @@ str--;
 num2++;
 }
 
-num1--;
+
 num4 = num1 % 2;
 if (num4 != 0)
 {
 num3 = (num1 -1) / 2;
-
+num3 += 1;
 }
 else
 {
