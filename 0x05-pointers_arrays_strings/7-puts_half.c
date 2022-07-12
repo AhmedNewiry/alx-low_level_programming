@@ -30,10 +30,10 @@ start = length / 2;
 
 while (start <= length)
 {
-putchar(str[start]);
+_putchar(str[start]);
 start++;
 
 }
-putchar('\n');
+_putchar('\n');
 }
 
