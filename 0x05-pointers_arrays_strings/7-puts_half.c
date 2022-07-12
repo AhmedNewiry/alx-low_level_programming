@@ -40,5 +40,5 @@ num3++;
 str++;
 }
 
-putchar('\n');
+_putchar('\n');
 }
