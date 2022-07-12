@@ -28,7 +28,7 @@ if (num4 != 0)
 {
 while ((num3 +1 ) <= num1)
 {
-putchar(*str);
+_putchar(*str);
 num3++;
 str++;
 }
@@ -36,7 +36,7 @@ str++;
 }
 while ((num3 + 1) <= num1)
 {
-putchar(*str);
+_putchar(*str);
 num3++;
 str++;
 }
