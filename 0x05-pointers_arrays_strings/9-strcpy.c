@@ -14,7 +14,7 @@ for (index = 0; src[index] != '\0'; index++)
 dest[index] = src[index];
 
 }
-index++;
+++index;
 dest[index] = '\0';
 
 return (dest);
