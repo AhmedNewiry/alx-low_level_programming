@@ -13,19 +13,20 @@ while (*s)
 s++;
 n++;
 }
-0s--;
-char rev[n];
+
+s--;
+char *rev;
 int x = 0;
 while (start <= s)
 {
-*(&rev + x) = *s;
+*(rev + x) = *s;
 --s;
 x++;
 }
 int z = 0;
-while (&rev >= start)
+while (rev >= start)
 {
-*(s + z) = (&rev + z);
+*(s + z) = *(rev + z);
 z++;
 }
 }
