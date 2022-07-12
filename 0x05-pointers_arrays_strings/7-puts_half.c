@@ -14,7 +14,7 @@ while (*str)
 num1++;
 str++;
 }
-
+num1--;
 num2 = num1 / 2;
 while (num2 <= num1)
 {
