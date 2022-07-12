@@ -27,6 +27,7 @@ start = length / 2;
 while (start <= length)
 {
 _putchar(*str);
+str++;
 start++;
 }
 }
