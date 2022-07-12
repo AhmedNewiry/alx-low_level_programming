@@ -8,14 +8,16 @@ void puts2(char *str)
 char *ptr = str;
 while (*str)
 {
-_putchar(*str);
+
 if (str == ptr)
 {	
 str++;
 }
+_putchar(*str);
+
 str += 2;
-_putchar('\n');
 
 }
+_putchar('\n');
 
 }
