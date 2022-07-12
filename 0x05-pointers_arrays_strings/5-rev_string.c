@@ -1,6 +1,6 @@
 void rev_string(char *s)
 {
-ar *start;
+char *start;
 start = s;
 while (*s)
 {
