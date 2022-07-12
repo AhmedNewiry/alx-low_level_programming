@@ -21,7 +21,7 @@ while (num2 <= num1)
 str--;
 num2++;
 }
-num1--;
+
 num3 = num1 / 2;
 num4 = num1 % 2;
 if (num4 != 0)
