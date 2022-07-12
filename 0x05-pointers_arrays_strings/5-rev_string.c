@@ -23,7 +23,7 @@ s--;
 
 while (start <= s)
 {
-*(rev + x) = *s;
+rev = s;
 --s;
 x++;
 }
