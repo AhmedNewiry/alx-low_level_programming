@@ -11,9 +11,12 @@ int index;
 for (index = 0; index < n; index++)
 {
 printf("%i",a[index]);
+if (index != (n -1) )
+{
 _putchar(',');
+}
+
 _putchar(' ');
 }
 _putchar('\n');
 }
-
