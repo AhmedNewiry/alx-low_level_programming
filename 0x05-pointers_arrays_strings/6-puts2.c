@@ -9,10 +9,6 @@ char *ptr = str;
 while (*str)
 {
 
-if (str == ptr)
-{	
-str++;
-}
 _putchar(*str);
 
 str += 2;
