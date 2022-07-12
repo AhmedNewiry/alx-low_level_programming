@@ -14,7 +14,7 @@ dest[index] = src[index];
 
 }
 index++;
-dest[index];
+dest[index] = '\0';
 
 return (dest);
 
