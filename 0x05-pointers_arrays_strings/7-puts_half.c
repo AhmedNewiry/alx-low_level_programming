@@ -27,13 +27,13 @@ num4 = num1 % 2;
 if (num4 != 0)
 {
 num3 = (num1 -1) / 2;
-num3++;
+
 }
 else
 {
 num3 = num1 / 2;
 }
-while (num3 < num1)
+while (num3 <= num1)
 {
 _putchar(*str);
 num3++;
