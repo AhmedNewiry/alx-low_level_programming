@@ -17,14 +17,14 @@ length++;
 if (!(length % 2))
 {
 start = (length - 1) / 2;
-
+start++;
 }
 else
 {
 start = length / 2;
 }
 
-while (start <= length)
+while (start <= (length / 2))
 {
 _putchar(*str);
 str++;
