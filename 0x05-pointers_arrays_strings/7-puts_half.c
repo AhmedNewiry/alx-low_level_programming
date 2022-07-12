@@ -19,7 +19,7 @@ while (num2 < num1)
 str--;
 num2++;
 }
-num3 = num1/2
+num3 = num1 / 2;
 while (num3 < num1)
 {
 _putchar(*str);
