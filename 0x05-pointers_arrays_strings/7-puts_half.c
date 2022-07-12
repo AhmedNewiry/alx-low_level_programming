@@ -33,7 +33,7 @@ else
 {
 num3 = num1 / 2;
 }
-while (num3 <= num1)
+while (num3 < num1)
 {
 _putchar(*str);
 num3++;
