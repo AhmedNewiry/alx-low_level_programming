@@ -24,10 +24,10 @@ else
 start = length / 2;
 }
 
-while (start <= (length / 2))
+while (start <= length)
 {
-_putchar(*str);
-str++;
+_putchar(str[start]);
+
 start++;
 }
 }
