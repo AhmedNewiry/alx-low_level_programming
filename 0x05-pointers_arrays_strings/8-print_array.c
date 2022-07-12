@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_array- prints n numbers of array elements
@@ -9,7 +10,7 @@ void print_array(int *a, int n)
 int index;
 for (index = 0; index < n; index++)
 {
-printf(a[index]);
+printf("%i",a[index]);
 _putchar(',');
 _putchar(' ');
 }
