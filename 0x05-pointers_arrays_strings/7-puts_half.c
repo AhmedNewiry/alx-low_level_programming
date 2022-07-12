@@ -31,12 +31,13 @@ _putchar(*str);
 num3++;
 str++;
 }
+
+}
 while (num3 <= num1)
 {
 _putchar(*str);
 num3++;
 str++;
-}
 }
 
 }
