@@ -16,5 +16,5 @@ if (index != (n -1))
 printf(", ");
 }
 }
-printf('\n');
+printf("\n");
 }
