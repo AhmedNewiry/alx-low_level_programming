@@ -14,11 +14,11 @@ str++;
 length++;
 }
 str = ptr;
-
+length--;
 if (!(length % 2))
 {
 start = (length - 1) / 2;
-
+start++;
 
 }
 else
