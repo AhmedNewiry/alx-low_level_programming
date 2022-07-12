@@ -9,6 +9,7 @@ int num1 = 0;
 int num2 = 0;
 int num3 = 0;
 int num4 = 0;
+int num5 = 0;
 while (*str)
 {
 num1++;
@@ -36,7 +37,7 @@ str++;
 }
 
 }
-num3 = num1 / 2;
+num5 = num1 / 2;
 while (num3 <= num1)
 {
 _putchar(*str);
