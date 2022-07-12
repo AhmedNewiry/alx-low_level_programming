@@ -15,13 +15,13 @@ str++;
 }
 num1--;
 num2 = (num1 - 1) / 2;
-while (num2 < num1)
+while (num2 <= num1)
 {
 str--;
 num2++;
 }
 num3 = (num1 - 1) / 2;
-while (num3 < num1)
+while (num3 <= num1)
 {
 _putchar(*str);
 num3++;
