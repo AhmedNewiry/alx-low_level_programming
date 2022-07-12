@@ -6,9 +6,17 @@
  */
 char *_strcpy(char *dest, char *src)
 {
+int index;
 
-dest = src;
+for (index = 0; src[index] != '\0'; index++)
+{
+dest[index] = src[index];
+
+}
+index++;
+dest[index];
+
 return (dest);
-    
-    
+
+
 }
