@@ -31,7 +31,7 @@ num3++;
 }
 else
 {
-num3 = num1 / 2
+num3 = num1 / 2;
 }
 while (num3 <= num1)
 {
