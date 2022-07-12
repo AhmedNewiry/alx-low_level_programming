@@ -5,9 +5,12 @@
  */
 void rev_string(char *s)
 {
+int n = 0;
+int x = 0;
+int z = 0;
 char *start;
 start = s;
-int n = 0;
+
 while (*s)
 {
 s++;
@@ -16,14 +19,14 @@ n++;
 
 s--;
 char *rev;
-int x = 0;
+
 while (start <= s)
 {
 *(rev + x) = *s;
 --s;
 x++;
 }
-int z = 0;
+
 while (rev >= start)
 {
 *(s + z) = *(rev + z);
