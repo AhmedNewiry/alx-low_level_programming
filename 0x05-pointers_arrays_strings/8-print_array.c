@@ -14,9 +14,10 @@ printf("%i",a[index]);
 if (index != (n -1) )
 {
 _putchar(',');
+_putchar(' ');
 }
 
-_putchar(' ');
+
 }
 _putchar('\n');
 }
