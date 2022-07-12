@@ -28,6 +28,6 @@ while (start <= length)
 {
 _putchar(str[start]);
 
-start++;
 }
+_putchar('\n');
 }
