@@ -8,6 +8,7 @@ void rev_string(char *s)
 int n = 0;
 int x = 0;
 int z = 0;
+char *rev = NULL;
 char *start;
 start = s;
 
@@ -18,7 +19,7 @@ n++;
 }
 
 s--;
-char *rev;
+
 
 while (start <= s)
 {
