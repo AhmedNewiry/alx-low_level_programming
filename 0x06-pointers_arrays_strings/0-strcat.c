@@ -15,9 +15,11 @@ dest++;
 
 while (*src)
 {
-*(dest + 1)= src[index]
+*(dest + 1)= src[index];
 index++;
 src++;
 }
+printf("my senctence is :%s", dest);
+*(dest + 1) = '\0';
 return (dest);
 }
