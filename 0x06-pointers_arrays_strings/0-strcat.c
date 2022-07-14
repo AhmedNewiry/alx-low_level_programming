@@ -17,6 +17,7 @@ while (*src)
 {
 *(dest + 1)= src[index]
 index++;
+src++;
 }
 return (dest);
 }
