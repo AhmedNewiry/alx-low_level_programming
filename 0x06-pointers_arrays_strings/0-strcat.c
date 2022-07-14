@@ -17,14 +17,14 @@ len++;
 
 while (src[index] != '\0')
 {
-dest[len] = src[index];
+*(dest + len) = *(src + index);
 index++;
 len++;
 
 }
 
-dest[len] = '\0';
-printf("my senctence is :%s", dest);
+*(dest + (len + 1)) = '\0';
+
 return (dest);
 }
 
