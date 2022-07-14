@@ -17,7 +17,7 @@ while (dest[len] != '\0')
 len++;
 }
 
-while (index <= n)
+while (index < n)
 {
 *(dest + len) = *(src + index);
 index++;
@@ -25,7 +25,6 @@ len++;
 
 }
 
-*(dest + (len + 1)) = '\0';
 
 return (dest);
 
