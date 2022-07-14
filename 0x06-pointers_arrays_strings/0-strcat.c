@@ -8,18 +8,23 @@
 char *_strcat(char *dest, char *src)
 {
 int index = 0;
-while (*dest)
+int len = 0;
+while (dest[len] != '\0')
 {
-dest++;
+
+len++;
 }
 
-while (*src)
+while (src[index] != '\0')
 {
-*(dest + 1)= src[index];
+dest[len] = src[index];
 index++;
-src++;
+len++;
+
 }
+
+dest[len] = '\0';
 printf("my senctence is :%s", dest);
-*(dest + 1) = '\0';
 return (dest);
 }
+
