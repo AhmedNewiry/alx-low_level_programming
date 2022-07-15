@@ -17,6 +17,9 @@ while (src[index] != '\0' && index < n)
 index++;
 
 }
+while (index < n)
+{
 dest[index++] = '\0';
+}
 return (dest);
 }
