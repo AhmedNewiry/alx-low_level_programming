@@ -15,7 +15,8 @@ if (s1[i] != s2[i])
 {
 return (s1[i]  - s2[i]);
 }
-return (0);
+
 i++;
 }
+return (0);
 }
