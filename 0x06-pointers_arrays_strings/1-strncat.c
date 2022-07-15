@@ -11,18 +11,26 @@ char *_strncat(char *dest, char *src, int n)
 {
 int index = 0;
 int len = 0;
+int r = 0;
 while (dest[len] != '\0')
 {
 
 len++;
 }
 
+while (src[r] != '\0')
+{
+r++;
+
+}
+if ( n <= r)
+{
 while (index < n)
 {
 *(dest + len) = *(src + index);
 index++;
 len++;
-
+}
 }
 
 
