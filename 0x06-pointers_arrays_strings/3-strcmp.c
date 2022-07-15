@@ -22,5 +22,6 @@ if (sum1 != sum2)
 return (s1[i]  - s2[i]);
 }
 return (0);
+i++;
 }
 }
