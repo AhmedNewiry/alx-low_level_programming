@@ -7,31 +7,19 @@
  */
 int _strcmp(char *s1, char *s2)
 {
+
 int sum1 = 0;
 int sum2 = 0;
-while (s1[sum1])
+int i = 0;
+while (s1[i] && s2[i])
 {
-sum1++;
-}
 
-while (s2[sum2])
-{
-sum2++;
-}
+sum1 += s1[i];
+sum2 += s2[i];
 
-if (sum1 == sum2)
+if (sum1 != sum2)
 {
+return (s1[i]  - s2[i]);
+}
 return (0);
-}
-if (sum1 > sum2)
-{
-return (sum1);
-}
-if (sum1 < sum2)
-{
-return (-sum2);
-}
-
-
-
 }
