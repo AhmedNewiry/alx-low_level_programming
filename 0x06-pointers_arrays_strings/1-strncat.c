@@ -23,14 +23,13 @@ while (src[r] != '\0')
 r++;
 
 }
-if ( n <= r)
-{
-while (index < n)
+
+while (src[index] != '\0' && index < n)
 {
 *(dest + len) = *(src + index);
 index++;
 len++;
-}
+
 }
 
 
