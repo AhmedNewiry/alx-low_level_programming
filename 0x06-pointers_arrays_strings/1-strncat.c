@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat- concatinates two stings
+ * _strncat- concatinates two stings
  * @dest: the pointer of the first array
  * @src: the pointer  of the second array
  * @n: is number of characters to be copied
