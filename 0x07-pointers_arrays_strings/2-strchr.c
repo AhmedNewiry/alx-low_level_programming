@@ -16,7 +16,7 @@ while (s[i])
 i++;
 }
 i--;
-for (int x = 0; x < i; x++)
+for (x = 0; x < i; x++)
 {
 if (s[x] == c)
 {
