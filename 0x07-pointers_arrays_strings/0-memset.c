@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _memset- is afunction fills the first n bytes of s with b
  * @s: is the pointer of the first byte in the buffer
@@ -14,13 +15,6 @@ unsigned int i;
 for (int i = 0; i < n; i++)
 {
 s[i] = b;
-
-
-
 }
 return (s);
-
-
-
-
 }
