@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strchr- a function that searches for a character
  * @s: the pointer to the array to be searched
@@ -20,7 +21,7 @@ for (int x = 0; x < i; x++)
 {
 if (s[x] == c)
 {
-return (x);
+return (s[x]);
 
 }
 if (s[x] != c && x == i - 1)
