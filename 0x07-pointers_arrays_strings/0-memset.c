@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_memset- is afunction fills the first n bytes of s with b
+ * _memset- is afunction fills the first n bytes of s with b
  * @s: is the pointer of the first byte in the buffer
  * @b: is the char that will fill s
  * @n: is the number of bytes
