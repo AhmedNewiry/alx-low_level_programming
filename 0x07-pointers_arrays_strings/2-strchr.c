@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -23,7 +24,7 @@ return (&s[x]);
 }
 if (s[x] != c && x == i - 1)
 {
-return ('\0');
+return (NULL);
 }
 }
 }
