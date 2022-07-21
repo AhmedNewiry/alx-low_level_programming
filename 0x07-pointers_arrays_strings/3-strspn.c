@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strspn- Returns the number of bytes of s that equal the bytes from accept
+ * _strspn- returns the number of bytes of s that equal the bytes from accept
  * @s: pointer to the first sting
  * @accept: pointer to the second string
- * Retrun: number of bytes if found null if not
+ * Return: number of bytes if found null if not
  */
 
 
