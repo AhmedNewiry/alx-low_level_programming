@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _strchr- a function that searches for a character
+ * @s: the pointer to the array to be searched
  * @c: the searched character
  * Return: the index if found or NULL if not
  */
@@ -22,7 +23,7 @@ if (s[x] == c)
 return (x);
 
 }
-if (s[x] != c && x == i-1)
+if (s[x] != c && x == i - 1)
 {
 return (NULL);
 
