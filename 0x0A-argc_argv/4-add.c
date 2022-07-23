@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 int symbol = 0;
 int sum = 0;
 int i;
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 if (46 > (*argv[i]) || (*argv[i]) > 57)
 {
