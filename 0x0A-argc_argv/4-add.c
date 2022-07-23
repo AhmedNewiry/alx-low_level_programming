@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+
 /**
  * main- is the entry point
  * @argc: is the lenght of argv arry
