@@ -14,6 +14,6 @@ while (argc-- && argv[i])
 
 i++;
 }
-printf("%d\n", i);
+printf("%d\n", i - 1);
 return (0);
 }
