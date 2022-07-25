@@ -22,6 +22,10 @@ for (i = 0; i < size; i++)
 {
 ar[i] = c;
 }
+if (ar)
+{
 return (ar);
+}
+return (NULL);
 
 }
