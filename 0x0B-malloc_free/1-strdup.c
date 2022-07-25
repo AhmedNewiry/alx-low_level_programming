@@ -20,7 +20,7 @@ for (x = 0; str[x] != '\0'; i++)
 x++;
 }
 x++;
-new = malloc(x * sizeof(char));
+new = (char *)malloc(x * sizeof(char));
 if (new)
 {
 for (i = 0; str[i] != '\0'; i++)
