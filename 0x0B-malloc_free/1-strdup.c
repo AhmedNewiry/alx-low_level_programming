@@ -27,6 +27,7 @@ new[i] = str[i];
 }
 new[i++] = '\0';
 str2 = new;
+free(new);
 return (str2);
 }
 return (new);
