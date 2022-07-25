@@ -21,12 +21,16 @@ x++;
 }
 x++;
 new = malloc(x * sizeof(char));
+if (new)
+{
 for (i = 0; str[i] != '\0'; i++)
 {
 new[i] = str[i];
 }
 new[i++] = '\0';
 
+return (new);
+}
 return (new);
 }
 return (new);
