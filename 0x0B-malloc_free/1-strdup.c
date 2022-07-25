@@ -19,7 +19,7 @@ for (x = 0; str[x] != '\0'; i++)
 {
 x++;
 }
-
+x++;
 new = malloc(x * sizeof(char));
 for (i = 0; str[i] != '\0'; i++)
 {
@@ -27,7 +27,7 @@ new[i] = str[i];
 }
 new[i++] = '\0';
 
-return (str2);
+return (new);
 }
 return (new);
 }
