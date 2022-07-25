@@ -7,7 +7,6 @@
  * Return: pointer to the first element if success and NULL if not
  */
 
-
 char *_strdup(char *str)
 {
 int x;
@@ -22,7 +21,7 @@ if (str)
 new = malloc(x * sizeof(char));
 for (i = 0; str[i] != '\0'; i++)
 {
-str[i] = new[i];
+new[i] = str[i];
 }
 new[i++] = '\0';
 return (new);
