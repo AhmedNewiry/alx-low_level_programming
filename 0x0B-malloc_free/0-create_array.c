@@ -7,7 +7,7 @@
  * @c: the first Element
  * Return: pointer to the first element if success and NULL if not
  */
-ar *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 char *ar;
 unsigned int i;
