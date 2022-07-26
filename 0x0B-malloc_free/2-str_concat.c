@@ -5,15 +5,13 @@
  * str_concat- copy of the string given as a parameter.
  * @s1: pointer to the first string
  * @s2: pointer to the second string
- * Return- pointer to the first element if success and NULL if not
+ * Return: pointer to the first element if success and NULL if not
  */
 
 
 char *str_concat(char *s1, char *s2)
 {
-int x;
-int i;
-int y;
+int x, i, y;
 char *cped = NULL;
 if (!s1)
 {
@@ -34,14 +32,12 @@ while (s2[i])
 {
 i++;
 }
-
 cped = (char *)malloc((x + i + 1) * sizeof(char));
 if (cped)
 {
 for (y = 0; y < x; y++)
 {
 cped[y] = s1[y];
-
 }
 y = 0;
 for (y = 0; y < i; y++)
@@ -50,9 +46,7 @@ cped[x] = s2[y];
 x++;
 }
 cped[x++] = '\0';
-
 return (cped);
 }
-
 return (NULL);
 }
