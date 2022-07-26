@@ -28,7 +28,7 @@ while (s1[x])
 {
 x++;
 }
-printf("%i",x);
+
 i = 0;
 while (s2[i])
 {
