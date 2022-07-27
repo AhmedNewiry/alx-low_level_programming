@@ -38,7 +38,7 @@ else
 return (NULL);
 }
 }
-printf("%i",twoDarray[0][0]);
+
 return (twoDarray);
 }
 return (NULL);
