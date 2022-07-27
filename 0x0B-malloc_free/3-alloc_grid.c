@@ -27,6 +27,10 @@ for (i = 0; i < height; i++)
 twoDarray[i] = malloc(width * sizeof(int));
 if (twoDarray[i] == NULL)
 {
+for (i; i > 0; i--)
+{
+free(twoDarray);
+}
 free(twoDarray);
 return (NULL);
 }
