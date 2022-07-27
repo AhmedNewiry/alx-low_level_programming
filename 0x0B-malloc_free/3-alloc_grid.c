@@ -33,7 +33,7 @@ for (x = 0; x < width; x++)
 twoDarray[i][x] = 0;
 }
 }
-else
+else if (twoDarray == NULL)
 {
 free(twoDarray);
 return (NULL);
