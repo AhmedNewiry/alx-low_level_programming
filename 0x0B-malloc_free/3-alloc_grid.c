@@ -31,7 +31,7 @@ for (--i; i >= 0; i--)
 {
 free(twoDarray);
 }
-free(twoDarray);
+
 return (NULL);
 }
 else
@@ -45,7 +45,7 @@ twoDarray[i][x] = 0;
 
 return (twoDarray);
 }
-
+free(twoDarray);
 return (NULL);
 
 }
