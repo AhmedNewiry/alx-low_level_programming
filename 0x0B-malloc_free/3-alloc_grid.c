@@ -19,12 +19,12 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-twoDarray = (int **)malloc(height * sizeof(int));
+twoDarray = malloc(height * sizeof(int));
 if (twoDarray)
 {
 for (i = 0; i < height; i++)
 {
-twoDarray[i] = (int *)malloc(width * sizeof(int));
+twoDarray[i] = malloc(width * sizeof(int));
 if (twoDarray[i] == NULL)
 {
 free(twoDarray);
