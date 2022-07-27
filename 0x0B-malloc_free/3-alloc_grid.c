@@ -13,6 +13,7 @@ int **alloc_grid(int width, int height)
 
 int i;
 int x;
+int **twoD;
 int **twoDarray = NULL;
 
 if (width <= 0 || height <= 0)
@@ -42,8 +43,12 @@ twoDarray[i][x] = 0;
 }
 }
 }
-
-return (twoDarray);
+twoD = twoDarray;
+for (--i; i >= 0; i--)
+{
+free(twoDarray);
+}
+return (twoD);
 }
 free(twoDarray);
 return (NULL);
