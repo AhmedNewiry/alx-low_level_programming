@@ -38,7 +38,7 @@ twoDarray[i][x] = 0;
 }
 }
 }
-printf("%i",twoDarray[0][0]);
+
 return (twoDarray);
 }
 free (twoDarray);
