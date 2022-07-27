@@ -31,7 +31,7 @@ for (--i; i >= 0; i--)
 {
 free(twoDarray);
 }
-
+free(twoDarray);
 return (NULL);
 }
 else
