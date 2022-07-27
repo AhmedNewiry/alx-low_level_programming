@@ -27,7 +27,7 @@ for (i = 0; i < height; i++)
 twoDarray[i] = (int *)malloc(width * sizeof(int));
 if (twoDarray[i] == NULL)
 {
-free (twoDarray);
+free(twoDarray);
 return (NULL);
 }
 else
@@ -41,7 +41,7 @@ twoDarray[i][x] = 0;
 
 return (twoDarray);
 }
-free (twoDarray);
+free(twoDarray);
 return (NULL);
 
 }
