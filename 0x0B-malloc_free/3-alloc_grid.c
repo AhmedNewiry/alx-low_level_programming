@@ -8,7 +8,6 @@
  * Return: pointer to the first element if success and NULL if not
  */
 
-
 int **alloc_grid(int width, int height)
 {
 
@@ -26,23 +25,23 @@ if (twoDarray)
 for (i = 0; i < height; i++)
 {
 twoDarray[i] = (int *)malloc(width * sizeof(int));
-if (twoDarray[i])
+if (twoDarray[i] == NULL)
+{
+free (twoDarray);
+return (NULL);
+}
+else
 {
 for (x = 0; x < width; x++)
 {
 twoDarray[i][x] = 0;
 }
 }
-else if (twoDarray == NULL)
-{
-free(twoDarray);
-return (NULL);
 }
-}
-
+printf("%i",twoDarray[0][0]);
 return (twoDarray);
 }
-free(twoDarray);
+free (twoDarray);
 return (NULL);
 
 }
