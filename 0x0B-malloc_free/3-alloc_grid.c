@@ -5,7 +5,7 @@
  * alloc_grid- function that returns a pointer to a 2 D array of integers.
  * @width: 2D array rows
  * @height: 2D array columns
- * Return- pointer to the first element if success and NULL if not
+ * Return: pointer to the first element if success and NULL if not
  */
 
 
@@ -35,12 +35,14 @@ twoDarray[i][x] = 0;
 }
 else
 {
+free(twoDarray);
 return (NULL);
 }
 }
 
 return (twoDarray);
 }
+free(twoDarray);
 return (NULL);
 
 }
