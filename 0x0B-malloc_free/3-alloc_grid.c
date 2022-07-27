@@ -35,7 +35,7 @@ twoDarray[i][x] = 0;
 }
 else
 {
-free(twoDarray[i]);
+free(twoDarray);
 return (NULL);
 }
 }
