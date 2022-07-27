@@ -19,7 +19,7 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-twoDarray = malloc(height * sizeof(int));
+twoDarray = malloc(height * sizeof(int *));
 if (twoDarray)
 {
 for (i = 0; i < height; i++)
