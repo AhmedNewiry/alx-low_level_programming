@@ -38,7 +38,7 @@ concat[y] = s1[y];
 }
 for (y = 0; y < n && s2[y]; y++)
 {
-concat[x - 1] = s2[y];
+concat[x] = s2[y];
 x++;
 }
 concat[x++] = '\0';
