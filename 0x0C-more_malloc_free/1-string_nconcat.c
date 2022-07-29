@@ -38,6 +38,10 @@ for (y = 0; y < x; y++)
 concat[y] = s1[y];
 
 }
+if (n < i)
+{
+n = i;
+}
 for (y = 0; y < n && s2[y]; y++)
 {
 concat[x] = s2[y];
