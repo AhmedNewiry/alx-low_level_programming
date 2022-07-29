@@ -30,10 +30,7 @@ while (s2[i])
 {
 i++;
 }
-if (n < i)
-{
-n = i;
-}
+
 concat = malloc(sizeof(*concat) * (i + x + 1));
 if (concat)
 {
@@ -42,7 +39,7 @@ for (y = 0; y < x; y++)
 concat[y] = s1[y];
 
 }
-for (y = 0; y < n; y++)
+for (y = 0; y < n && s2[y]; y++)
 {
 concat[x] = s2[y];
 x++;
