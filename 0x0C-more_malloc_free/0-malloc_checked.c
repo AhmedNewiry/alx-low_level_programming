@@ -3,7 +3,7 @@
 /**
  * malloc_checked-allocates memory using malloc.
  * @b: determines the memory size
- * return- memory pointer if success or 98 if fails
+ * Return- memory pointer if success or 98 if fails
  */
 void *malloc_checked(unsigned int b)
 {
@@ -12,7 +12,7 @@ if (mem)
 {
 return (mem);
 }
-exit (98);
+exit(98);
 
 
 }
