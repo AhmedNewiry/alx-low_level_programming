@@ -4,6 +4,7 @@
  * _realloc- a function that reallocates a memory block using malloc and free.
  * @ptr: the pointer to the old array
  * @old_size: the size of the old array
+ * @new_size: the size of the new array
  * Return: pointer to the new array or null
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
