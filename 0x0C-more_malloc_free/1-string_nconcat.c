@@ -36,7 +36,7 @@ for (y = 0; y < x; y++)
 {
 concat[y] = s1[y];
 }
-for (y = 0; y < n && s2[y]; y++)
+for (y = 0; y < n && s2[y] != '\0'; y++)
 {
 concat[x] = s2[y];
 x++;
