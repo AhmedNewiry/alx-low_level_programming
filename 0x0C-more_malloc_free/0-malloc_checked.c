@@ -12,7 +12,7 @@ if (*mem)
 {
 return (mem);
 }
-return (98);
+exit (98);
 
 
 }
