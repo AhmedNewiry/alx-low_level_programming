@@ -21,7 +21,6 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-
 while (s1[x])
 {
 x++;
@@ -30,20 +29,17 @@ while (s2[i])
 {
 i++;
 }
-
 concat = malloc(sizeof(*concat) * (i + x + 1));
 if (concat)
 {
 for (y = 0; y < x; y++)
 {
 concat[y] = s1[y];
-
 }
 for (y = 0; y < n && s2[y]; y++)
 {
-concat[x] = s2[y];
+concat[x - 1] = s2[y];
 x++;
-
 }
 concat[x++] = '\0';
 return (concat);
