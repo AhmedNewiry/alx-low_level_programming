@@ -47,6 +47,6 @@ x++;
 concat[x++] = '\0';
 return (concat);
 }
-
+free(concat);
 return (NULL);
 }
