@@ -17,7 +17,7 @@ return (NULL);
 callocx = malloc(size * nmemb);
 if (callocx)
 {
-for (x = 0; x < nmemb; x++)
+for (x = 0; x < nmemb * size; x++)
 {
 callocx[x] = 0;
 }
