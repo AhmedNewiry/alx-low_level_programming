@@ -6,28 +6,7 @@
  */
 void print_dog(struct dog *d)
 {
-int x;
-if (d)
-{
-for (x = 0; x < 3; x++)
-{
-if (!d[0])
-{
-printf("Name:(nil)");
-}
-else if (!d[x])
-{
-printf("(nil)");
-}
-else
-{
-
-printf("%d", d[x]);
-
-}
-}
-}
-}
-return;
-
+d->name?(printf("Name:%s\n",d->name)):(printf("(nil)\n"));
+d->owner?(printf("%s\n",d->owner)):(printf("(nil)\n"));
+d->age?(printf("%f\n",d->age)):(printf("(nil)\n"));
 }
