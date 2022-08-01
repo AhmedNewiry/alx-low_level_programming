@@ -9,7 +9,7 @@ if (d)
 {
 free(d->name);
 free(d->owner);
-free(d);    
+free(d);
 }
 
 }
