@@ -22,7 +22,7 @@ printf("(nil)");
 else
 {
 
-printf("%d",d[x]);
+printf("%d", d[x]);
 
 }
 }
