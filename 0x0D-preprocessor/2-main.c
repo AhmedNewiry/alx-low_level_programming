@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 {
 if (argv && argc)
 {
-printf("%s\n", argv[0]);
+printf("%s\n",__FILE__);
 }
 return (0);
 }
