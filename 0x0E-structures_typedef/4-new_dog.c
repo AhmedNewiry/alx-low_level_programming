@@ -41,7 +41,7 @@ while (owner[i])
 owner_copy[i] = owner[i];
 i++;
 }
-name_copy[i] = '\0';
+owner_copy[i] = '\0';
 new_Dog->name = name_copy;
 new_Dog->age = age;
 new_Dog->owner = owner_copy;
