@@ -28,14 +28,14 @@ return (NULL);
 new_Dog = malloc(sizeof(new_Dog));
 if (new_Dog)
 {
-while (i < strlen(name))
+while (name[i])
 {
 name_copy[i] = name[i];
 i++;
 }
 name_copy[i] = '\0';
 i = 0;
-while (i < strlen(owner))
+while (owner[i])
 {
 owner_copy[i] = owner[i];
 i++;
