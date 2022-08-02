@@ -16,12 +16,12 @@ owner_copy = malloc(sizeof(*owner));
 if (name_copy == NULL)
 {
 free(name_copy);
-return(NULL);
+return (NULL);
 }
 if (owner_copy == NULL)
 {
 free(owner_copy);
-return(NULL);
+return (NULL);
 }
 dog_t *new_Dog;
 new_Dog = malloc(sizeof(new_Dog));
