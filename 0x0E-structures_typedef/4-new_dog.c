@@ -36,5 +36,6 @@ return (new_Dog);
 }
 free(name_copy);
 free(owner_copy);
-return (new_Dog);
+free(new_Dog);
+return (NULL);
 }
