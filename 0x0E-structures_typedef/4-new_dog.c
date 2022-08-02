@@ -13,8 +13,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t *new_Dog;
 char *name_copy, *owner_copy;
 unsigned int i;
-name_copy = malloc(sizeof(*name));
-owner_copy = malloc(sizeof(*owner));
+name_copy = malloc(sizeof(char) * strlen(name));
+owner_copy = malloc(sizeof(char) * strlen(owner));
 if (name_copy == NULL)
 {
 free(name_copy);
