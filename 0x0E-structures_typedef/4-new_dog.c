@@ -9,15 +9,30 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *new_dog;
-new_dog = malloc(sizeof(new_dog));
-if (new_dog)
+char *name_copy;
+char *owner_copy;
+name_copy = malloc(sizeof(*name));
+owner_copy = malloc(sizeof(*owner));
+if (name_copy == NULL)
 {
-new_dog->name = name;
-new_dog->age = age;
-new_dog->owner = owner;
-return (new_dog);
+free(name_copy);
+return(NULL);
 }
-return (new_dog);
+if (owner_copy == NULL)
+{
+free(owner_copy);
+return(NULL);
 }
-
+dog_t *new_Dog;
+new_Dog = malloc(sizeof(new_Dog));
+if (new_Dog)
+{
+name_copy = name;
+owner_copy = owner;
+new_Dog->name = name_copy;
+new_Dog->age = age;
+new_Dog->owner = owner_owner;
+return (new_Dog);
+}
+return (new_Dog);
+}
