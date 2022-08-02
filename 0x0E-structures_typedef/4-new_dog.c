@@ -26,7 +26,7 @@ if (owner_copy == NULL)
 free(owner_copy);
 return (NULL);
 }
-new_Dog = malloc(sizeof(new_Dog));
+new_Dog = malloc(sizeof(*new_Dog));
 if (new_Dog)
 {
 while (name[i])
