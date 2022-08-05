@@ -19,7 +19,7 @@ if (*separator && i != (n - 1))
 printf("%s", separator);
 }
 }
-_putchar('\n');
+printf("\n");
 va_end(ptr);
 
 }
