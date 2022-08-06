@@ -10,19 +10,13 @@ char *sep = "", *s
 va_list ptr;
 va_start(ptr, format);
 while (format[i])
-{
-i++;
-}
+	i++;
 while (format[x])
 {
 if (format[x + 1])
-{
-sep = ", ";
-}
+	sep = ", ";
 if (x == (i - 1))
-{
-sep = "";
-}
+	sep = "";
 switch (format[x])
 {
 case 'c':
