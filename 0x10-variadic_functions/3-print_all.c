@@ -6,7 +6,7 @@
 void print_all(const char * const format, ...)
 {
 int x = 0, i = 0;
-char *sep = "", *s
+char *sep = "", *s;
 va_list ptr;
 va_start(ptr, format);
 while (format[i])
