@@ -11,7 +11,7 @@ va_list ptr;
 va_start(ptr, format);
 while (format[i])
 	i++;
-while (format[x])
+while (format[x] && i <= 9)
 {
 if (format[x + 1])
 	sep = ", ";
