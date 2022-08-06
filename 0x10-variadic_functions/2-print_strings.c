@@ -20,7 +20,10 @@ if (str == NULL)
 {
 printf("(nil)");
 }
+else
+{
 printf("%s", str);
+}
 if (separator && i != (n - 1))
 {
 printf("%s", separator);
