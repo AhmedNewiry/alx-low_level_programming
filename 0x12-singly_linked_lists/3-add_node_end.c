@@ -49,7 +49,7 @@ while (temp != NULL)
 temp = temp->next;
 
 }
-printf("%i", z);
+
 temp = new_node;
 return (new_node);
 }
