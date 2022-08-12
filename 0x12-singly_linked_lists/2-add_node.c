@@ -23,11 +23,11 @@ return (i);
  */
 list_t *add_node(list_t **head, const char *str)
 {
+list_t *temp;
 if (str == NULL)
 {
 return (NULL);
 }
-list_t *temp;
 list_t *new_node = malloc(sizeof(list_t));
 if (new_node != NULL)
 {
