@@ -15,6 +15,7 @@ size++;
 }
 while (size > 0)
 {
+free(head->str);
 free(head);
 head--;
 size--;
