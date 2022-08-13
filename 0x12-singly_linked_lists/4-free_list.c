@@ -11,13 +11,13 @@ int i = 0;
 while (head != NULL)
 {
 head = head->next;
-z++;
+size++;
 }
-while (z > 0)
+while (size > 0)
 {
 free(head);
 head--;
-z--;
+size--;
 }
 
 }
