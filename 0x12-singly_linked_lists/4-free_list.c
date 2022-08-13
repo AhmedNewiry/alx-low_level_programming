@@ -6,19 +6,12 @@
 
 void free_list(list_t *head)
 {
-int size = 0;
+list_t *temp;
 
 while (head != NULL)
 {
+temp = head;
 head = head->next;
-size++;
-}
-while (size > 0)
-{
-free(head->str);
 free(head);
-head--;
-size--;
 }
-
 }
