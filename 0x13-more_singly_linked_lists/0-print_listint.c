@@ -13,5 +13,6 @@ printf("%i\n", h->n);
 h = h->next;
 i++;
 }
+printf("\n");
 return (i);
 }
