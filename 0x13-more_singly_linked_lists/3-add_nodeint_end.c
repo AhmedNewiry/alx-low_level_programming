@@ -26,6 +26,7 @@ while (temp->next != NULL)
 temp = temp->next;
 }
 temp->next = new_node;
+new_node->next = NULL;
 return (new_node);
 }
 return (NULL);
