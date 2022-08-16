@@ -12,12 +12,13 @@ listint_t *temp;
 temp = head;
 while (temp != NULL)
 {
-temp = temp->next;
-x++;
+
 if (x == (index))
 {
 return (temp);
 }
+temp = temp->next;
+x++;
 }
 return (NULL);
 }
