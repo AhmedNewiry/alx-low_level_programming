@@ -21,6 +21,7 @@ temp = *head;
 *head = (*(head))->next;
 i = (*(head))->n;
 free(temp);
+x++;
 }
 return (i);
 }
