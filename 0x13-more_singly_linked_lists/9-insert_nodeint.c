@@ -13,6 +13,10 @@ unsigned int x = 0;
 listint_t *temp;
 listint_t *temp2;
 listint_t *new_node;
+if (*head == NULL)
+{
+return (NULL);
+}
 new_node = malloc(sizeof(listint_t));
 if (new_node != NULL)
 {
