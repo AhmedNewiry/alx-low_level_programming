@@ -14,7 +14,7 @@ if (*head == NULL)
 {
 return (0);
 }
-while (*head != NULL && x < 1)
+while (*head != NULL)
 {
 temp = *head;
 *head = (*(head))->next;
