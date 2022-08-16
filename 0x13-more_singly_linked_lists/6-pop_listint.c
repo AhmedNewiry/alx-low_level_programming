@@ -17,10 +17,10 @@ return (0);
 }
 while (*head != NULL && x < 1)
 {
-temp = (*(head))->next;
+temp = *head;
+*head = (*(head))->next;
 i = (*(head))->n;
-free(*head);
-*head = temp;
+free(temp);
 }
 return (i);
 }
