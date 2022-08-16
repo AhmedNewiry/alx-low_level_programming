@@ -17,8 +17,8 @@ return (0);
 while (*head != NULL)
 {
 temp = *head;
-*head = (*(head))->next;
 i = (*(head))->n;
+*head = (*(head))->next;
 free(temp);
 return (i);
 }
