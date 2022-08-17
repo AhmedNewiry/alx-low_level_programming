@@ -1,13 +1,9 @@
 #include "lists.h"
 
 /**
- *
  * listint_len- a function that returns the size of a linked
- *
  * @h : pointer to the first element of the list
- *
  * Return: the size of the linked list
- *
  */
 
 size_t listint_len(const listint_t *h)
