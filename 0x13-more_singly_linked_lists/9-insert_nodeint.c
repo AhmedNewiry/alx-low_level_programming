@@ -57,8 +57,7 @@ if (new_node != NULL)
 new_node->n = n;
 if (idx == 0)
 {
-temp = new_node;
-new_node->next = *head;
+temp = new_node, new_node->next = *head;
 *head = temp;
 return (new_node);
 }
@@ -72,7 +71,8 @@ temp->next = new_node;
 y = listint_len(*head);
 if (x == y)
 {
-new_node->next = NULL, return (new_node);
+new_node->next = NULL;
+return (new_node);
 }
 if (x > y)
 {
