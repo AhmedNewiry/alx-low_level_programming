@@ -73,7 +73,7 @@ if (x == (idx - 1))
 temp2 = temp->next;
 temp->next = new_node;
 y = listint_len(*head);
-if (x == (y - 1))
+if (x == y)
 {
 new_node->next = NULL;
 
