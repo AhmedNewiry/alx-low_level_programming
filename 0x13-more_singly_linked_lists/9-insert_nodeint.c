@@ -58,6 +58,13 @@ new_node = malloc(sizeof(listint_t));
 if (new_node != NULL)
 {
 new_node->n = n;
+if (idx == 0)
+{
+temp = new_node;
+new_node->next = *head;
+*head = temp;
+return (new_node);
+}
 temp = *head;
 while (temp != NULL)
 {
