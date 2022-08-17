@@ -67,8 +67,7 @@ while (temp != NULL)
 if (x == (idx - 1))
 {
 temp2 = temp->next;
-temp->next = new_node;
-y = listint_len(*head);
+temp->next = new_node, y = listint_len(*head);
 if (x == y)
 {
 new_node->next = NULL;
@@ -76,6 +75,7 @@ return (new_node);
 }
 if (x > y)
 {
+free(new_node);
 return (NULL);
 }
 new_node->next = temp2;
