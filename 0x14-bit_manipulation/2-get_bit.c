@@ -8,39 +8,25 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int number;
-	int x;
-	unsigned int y;
+	unsigned int x;
+	unsigned int checker;
+	unsigned int check;
 
 	number = n;
 
-	if (n == 0 || n == 1)
-	{
-		if (index == 0)
-		{
-
-			return (n);
-		}
-
-	}
 	for (x = 0; n != 0; x++)
 	{
 		n = n >> 1;
 	}
-	y = x - 1;
-	if (index > y)
+	if (index > x - 1)
 	{
 		return (-1);
 	}
-	for (x -= 1; x >= 0; x--)
+	checker = 1 << index;
+	check = number & checker;
+	if (check == checker)
 	{
-		y = x;
-		if (y == index)
-		{
-
-			return (((number >> x) & 1));
-
-		}
-
+		return (1);
 	}
-	return (-1);
+	return (0);
 }
