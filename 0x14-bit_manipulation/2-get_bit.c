@@ -22,12 +22,15 @@ int get_bit(unsigned long int n, unsigned int index)
 		}
 
 	}
-
 	for (x = 0; n != 0; x++)
 	{
 		n = n >> 1;
 	}
-
+	y = x;
+	if (index > y)
+	{
+		return (-1);
+	}
 	for (x -= 1; x >= 0; x--)
 	{
 		y = x;
