@@ -8,23 +8,13 @@
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int bitNum;
-	unsigned long int EditedNum;
-	unsigned int binary;
 
-	EditedNum = *n;
 	bitNum = ((sizeof(unsigned long int) * 8) - 1);
 	if (index > bitNum)
 	{
 		return (-1);
 	}
-	binary = ((EditedNum >> index) & 1);
 
-
-	if (binary)
-	{
-		*n = (*n | 1 << index);
-		return (binary);
-	}
-	return (-1);
-
+	*n = (*n | 1 << index);
+	return (1);
 }
