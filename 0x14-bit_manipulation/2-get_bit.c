@@ -9,8 +9,8 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int number;
 	unsigned int x;
-	unsigned int checker;
-	unsigned int check;
+	unsigned int bitNum;
+	unsigned int binary;
 
 	number = n;
 
@@ -22,11 +22,11 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		return (-1);
 	}
-	checker = 1 << index;
-	check = number & checker;
-	if (check == checker)
+	bitNum = ((sizeof(unsigned long int) * 8) - 1);
+	if (index > bitNum)
 	{
-		return (1);
+		return (-1);
 	}
-	return (0);
+	binary = ((number >> index) & 1);
+	return (binary);
 }
