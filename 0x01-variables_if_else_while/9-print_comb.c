@@ -12,8 +12,8 @@ int main(void)
 		putchar(fir);
 		if (fir < '9')
 		{
-			putchar(' ');
 			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
