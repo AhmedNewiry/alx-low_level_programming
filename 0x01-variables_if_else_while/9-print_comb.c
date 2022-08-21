@@ -6,15 +6,14 @@
 int main(void)
 {
 	int fir;
-	int sec;
 
 	for (fir = '0'; fir <= '9'; fir++)
 	{
 		putchar(fir);
 		if (fir < '9')
 		{
+			putchar(' ');
 			putchar(',');
-			putchar(sec);
 		}
 	}
 	putchar('\n');
