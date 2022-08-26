@@ -46,7 +46,7 @@ int create_file(const char *filename, char *text_content)
 		close(fildes);
 		return (1);
 	}
-
+	close(fildes);
 	return (-1);
 
 }
