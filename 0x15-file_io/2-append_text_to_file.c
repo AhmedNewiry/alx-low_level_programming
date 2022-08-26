@@ -40,10 +40,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	len = _strlen(text_content);
+	_strlen(text_content);
 	if (text_content != NULL)
 	{
-		wlen = write(fildes, text_content, len);
+		wlen = write(fildes, text_content, _strlen(text_content));
 	}
 
 	close(fildes);
