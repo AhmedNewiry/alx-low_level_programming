@@ -28,6 +28,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (new_node);
 
 	}
-	return (NULL)
+	return (NULL);
 
 }
