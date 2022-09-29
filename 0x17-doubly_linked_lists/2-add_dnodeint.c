@@ -6,7 +6,6 @@
  * Return: pointer to the new node if success or NULL if nots
  */
 
-
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node;
@@ -15,13 +14,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (new_node)
 	{
 		new_node->n = n;
-		new_node->prev = NULL
-			if (*head == NULL)
-			{
-				*head = new_node;
-				new_node->next = NULL;
-				return (new_node);
-			}
+		new_node->prev = NULL;
+		if (*head == NULL)
+		{
+			*head = new_node;
+			new_node->next = NULL;
+			return (new_node);
+		}
 
 		new_node->next = *head;
 		*head = new_node;
