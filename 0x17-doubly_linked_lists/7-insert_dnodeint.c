@@ -4,26 +4,26 @@
  * @h: double pointer to the head of a linked list
  * @idx: the index at which the node will be added
  * @n: the data to be added to the new node
+ * Return: pointer to the added node
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *temp, *new_node, *temp2, *returned_node;
+	dlistint_t *temp, *new_node, *temp2, *r_node;
 
 	int i = 0;
+
 	temp = *h;
 
 	if (idx == 0)
 	{
-		returned_node = add_dnodeint(h, n);
-		return (returned_node);
+		r_node = add_dnodeint(h, n);
+		return (r_node);
 	}
-
 	new_node = malloc(sizeof(new_node));
 	if (new_node)
 	{
 		new_node->n = n;
-
 		while (temp->next)
 		{
 			if (i == (idx - 1))
@@ -35,17 +35,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				new_node->prev = temp;
 				return (new_node);
 			}
-
 			temp = temp->next;
 			i++;
 		}
-
 		if (!temp->next && idx == (i + 1))
 		{
-			returned_node = add_dnodeint_end(h, n);
-			return (returned_node);
+			r_node = add_dnodeint_end(h, n);
+			return (r_node);
 		}
-
 		return (NULL);
-
 	}
