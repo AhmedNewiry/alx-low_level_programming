@@ -6,6 +6,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int index = 0;
+	int comma;
 	hash_node_t *temp;
 
 	printf("{");
@@ -13,6 +14,10 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[index])
 		{
+			if (comma)
+			{
+				printf(", ");
+			}
 			temp = ht->array[index];
 			while (temp)
 			{
@@ -23,10 +28,7 @@ void hash_table_print(const hash_table_t *ht)
 					printf(", ");
 				}
 			}
-			if (index < (ht->size - 1))
-			{
-				printf(",");
-			}
+			comma = 1;
 		}
 		index++;
 	}
