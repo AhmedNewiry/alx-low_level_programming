@@ -11,18 +11,21 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	while (index < ht->size)
 	{
-		temp = ht->array[index];
-		while (temp->key)
+		if (ht->array[index])
 		{
-			printf("%s: %s", temp->key, temp->value);
-			temp = temp->next;
-			if (temp)
+			temp = ht->array[index];
+			while (temp)
 			{
-				printf(",");
+				printf("%s: %s", temp->key, temp->value);
+				temp = temp->next;
+				if (temp)
+				{
+					printf(",");
+				}
 			}
+			printf(",");
+			index++;
 		}
-		printf(",");
-		index++;
 	}
 	printf("}\n");
 }
