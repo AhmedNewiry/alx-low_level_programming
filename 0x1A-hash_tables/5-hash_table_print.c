@@ -20,12 +20,15 @@ void hash_table_print(const hash_table_t *ht)
 				temp = temp->next;
 				if (temp)
 				{
-					printf(",");
+					printf(", ");
 				}
 			}
-			printf(",");
-			index++;
+			if (index != (ht->size - 1))
+			{
+				printf(",");
+			}
 		}
+		index++;
 	}
 	printf("}\n");
 }
