@@ -25,7 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	new_node->value = strdup(value);
 	new_node->key = key;
-	index = key_index(key,ht->size);
+	index = key_index((const unsigned char *)key,ht->size);
 	if (ht[index] == NULL)
 	{
 		ht[index] = new_node;
