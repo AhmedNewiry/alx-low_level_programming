@@ -49,7 +49,7 @@ int binary_search(int *array, size_t size, int value)
  * @size: the array size
  * @left: the array first index
  */
-void print_arr(int *array, size_t size, int left)
+void print_arr(int *array, size_t size, size_t left)
 {
 	size_t i;
 	printf("Searching in array: ");
